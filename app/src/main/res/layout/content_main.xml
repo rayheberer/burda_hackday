@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.burdahackday.ui.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:src="@drawable/placeholdercouplesuperhero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="100dp"
+    />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="showImagePopup"
+        android:text="@string/string_pick_up_image"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="14sp"
+        android:padding="4dp"/>
+
+</RelativeLayout>
+</LinearLayout>
